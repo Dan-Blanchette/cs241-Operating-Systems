@@ -18,10 +18,10 @@ int main(int argc, char **argv)
         usage(argv[0]);
     }
 
-    int loop = atoi(argv[1]);
+    int loop = atoi(argv[1]), i = 0;
     char *name = argv[2];
 
-    for(int i = 0; i < loop; i++)
+    for(i; i < loop; i++)
     {
         printf("Hello, %s\n", name);
     }

@@ -1,0 +1,19 @@
+ 	Regarding my array implementation, I chose static buffering as it restricts user input to prevent them from putting their system at risk. 
+However, if I had decided to implement a dynamic memory approach, I would be putting too much responsibility and trust in the user’s behavior. 
+If the user were not particularly ethical or diligent in their use of the program, exploiting the functionally of a near-infinite number of entries 
+to the command line will lead to a system crash. 
+They could also use it maliciously if they wrote a program to execute the shell program in tandem with another self-written program. 
+
+	Suppose one had the means to repetitively write commands into the shell’s prompt beyond what the local system could accommodate in dynamic memory; 
+it would cause an overflow condition to the current user’s system. 
+Although the scenario I mentioned would take a considerable amount of time to crash a system (based on its memory size), 
+it is still an event to consider when using any dynamic memory approach.
+Due to the reasons, I chose to keep both arrays static to ensure that memory was restricted at a programming level, 
+providing stability and functionality to the shell program. 
+
+	I also have a routine to check and remove the possibility of leading white spaces, in-between spaces, and trailing spaces. 
+However, like a typical shell environment, my shell program will not eliminate spaces between entered characters (IE: l s – l). 
+Still, it will work correctly in the identification of such user behavior as an error. 
+Overall, this implementation lacks only one type of criteria that dynamic memory allows for flexibility. 
+Flexibility alone was not enough to justify a dynamic memory approach for the algorithm’s execution. 
+I feel confident that it was the right call to make given the functionality involved with implementing this program.
